@@ -58,7 +58,7 @@ uk = {
 'registrant':				r'Registrant:\n\s*(.+)',
 
 'creation_date':			r'Registered on:\s*(.+)',
-'expiration_date':			r'Renewal date:\s*(.+)',
+'expiration_date':			r'(?:Renewal date|Expiry date|Expiration date):\s*(.+)',
 'updated_date':				r'Last updated:\s*(.+)',
 
 'name_servers':				r'Name Servers:\s*(.+)\s*',
@@ -258,4 +258,31 @@ fr = {
 
 'name_servers':				r'nserver:\s*(.+)',
 'status':					r'status:\s?(.+)',
+}
+
+ua = {
+    'extend': None,
+
+    'domain_name':				r'domain:\s?(.+)',
+    'registrar':				r'registrar:\s*(.+)',
+    'registrant':				r'contact:\s?(.+)',
+
+    'creation_date':			r'created:(?:\s+)?(?:0-UANIC\s*)?(.+)',
+    'expiration_date':			r'(?:expires:\s?|status:(?:\s+)?(?:OK-UNTIL\s*))(.+)',#r'expires:\s?(.+)',
+    'updated_date':				None,#r'last-update:\s?(.+)',
+
+    'name_servers':				r'nserver:\s*(.+)',
+    'status':					r'status:\s?(.+)',
+
+}
+
+su = {
+    'extend': 'ru'
+}
+
+
+punycode_domains = {
+    'xn--p1ai': {
+        'extend': 'ru',
+    }
 }

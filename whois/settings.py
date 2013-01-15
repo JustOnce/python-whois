@@ -1,0 +1,2 @@
+ONLY_DATES = True
+CACHE_MAX_AGE = 60*60*48	# 48h

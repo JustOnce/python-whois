@@ -27,6 +27,7 @@ setup(
 		'Topic :: Internet',
 		'Topic :: Software Development :: Libraries :: Python Modules',
 	],
+    requires=['dateutil', 'gevent']
 )
 
 '''
