@@ -18,6 +18,7 @@ Features
  * works with Python 2.4+ and Python 3.x
  * all dates as datetime objects
  * possibility to cache results
+ * gevent v1.0 support
 
 
 Usage example
