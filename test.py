@@ -75,6 +75,13 @@ vm4070.vps.agava.net
 ufa1remont.ucoz.ru
 '''
 
+domains = '''
+best-film.tv
+filmpro.tv
+lovi.tv
+seone.tv
+'''
+
 '''
 for domain in domains.split('\n'):
     if domain:
@@ -136,6 +143,7 @@ class WhoisThreadingTester(object):
         except Exception as ex:
             print type(ex)
             print ex
+
 
 
 if __name__ == '__main__':

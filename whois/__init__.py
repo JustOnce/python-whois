@@ -18,11 +18,6 @@
 	2020-09-14 00:00:00
 
 """
-try:
-    from gevent import monkey
-    monkey.patch_all()
-except ImportError:
-    pass
 
 from ._1_query import do_query
 from ._2_parse import do_parse, TLD_RE

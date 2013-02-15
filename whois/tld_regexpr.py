@@ -281,6 +281,11 @@ su = {
 }
 
 
+tv = {
+    'extend': 'com'
+}
+
+
 punycode_domains = {
     'xn--p1ai': {
         'extend': 'ru',
